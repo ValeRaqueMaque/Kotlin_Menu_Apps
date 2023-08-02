@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/imc_overweight"
+    android:padding="20dp"
+    tools:context=".aristidevs.exercises.firstapp.MenuActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/greetings"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="50dp">
+
+    </TextView>
+    <Button
+        android:id="@+id/btnSaludApp"
+        android:layout_width="match_parent"
+        android:backgroundTint="#C32259"
+        android:layout_height="wrap_content"
+        android:text="@string/SaludAPP">
+    </Button>
+
+    <Button
+        android:id="@+id/btnIMCCalculatorApp"
+        android:backgroundTint="@color/imc_background_component_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/IMC_Calculator">
+    </Button>
+
+    <Button
+        android:id="@+id/btnTODO"
+        android:backgroundTint="#3673A8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Agenda">
+    </Button>
+
+</LinearLayout>
