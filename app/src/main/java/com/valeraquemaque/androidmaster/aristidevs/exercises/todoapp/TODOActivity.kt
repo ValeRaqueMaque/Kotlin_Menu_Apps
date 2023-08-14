@@ -30,6 +30,7 @@ class TODOActivity : AppCompatActivity() {
     }
 
     private fun initUI() {
+        //inicializamos el listado de categorías
         categoriesAdapter = CategoriesAdapter(categories)
         //agrego el Layout y le indico la vista que será de forma horizontal
         rvCategories.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)

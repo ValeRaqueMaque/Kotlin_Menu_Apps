@@ -20,6 +20,7 @@
             android:exported="false" />
         <activity
             android:name=".imccalculator.IMCCalculatorActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".aristidevs.exercises.firstapp.MenuActivity"

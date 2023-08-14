@@ -3,7 +3,6 @@ package com.valeraquemaque.androidmaster.imccalculator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.ContextCompat
@@ -20,9 +19,9 @@ class IMCCalculatorActivity : AppCompatActivity() {
     private var isMaleSelected: Boolean = true
     private var isFemaleSelected: Boolean = false
     private var isOtherSelected: Boolean = false
-    private var currentWeight: Int = 40
+    private var currentWeight: Int = 31
     private var currentHeight: Int = 120
-    private var currentAge: Int = 20
+    private var currentAge: Int = 11
 
     //Para no agregarlo dentro del OnCreate y que quede
     // toodo junto, se declara por fuera este componente
@@ -40,7 +39,7 @@ class IMCCalculatorActivity : AppCompatActivity() {
     private lateinit var btnCalculate: Button
 
     //lo que hcemos aquí todo el mundo puede acceder
-    companion object{
+    companion object {
         const val IMC_KEY = "IMC_RESULT"
     }
 
@@ -87,9 +86,12 @@ class IMCCalculatorActivity : AppCompatActivity() {
             currentHeight = df.format(value).toInt()
             tvHeight.text = "$currentHeight cm"
         }
-        //TODO ponerle el punto de base de 30 kg
         btnSubtractWeight.setOnClickListener {
             currentWeight -= 1
+
+            if (currentWeight < 30) {
+                currentWeight = 30
+            }
             setWeight()
         }
         btnPlusWeight.setOnClickListener {
@@ -98,6 +100,9 @@ class IMCCalculatorActivity : AppCompatActivity() {
         }
         btnSubtractAge.setOnClickListener {
             currentAge -= 1
+            if (currentAge < 10) {
+                currentAge = 10
+            }
             setAge()
         }
         btnPlusAge.setOnClickListener {
@@ -123,11 +128,11 @@ class IMCCalculatorActivity : AppCompatActivity() {
         setAge()
     }
 
-    private fun calculateIMC() :Double {
+    private fun calculateIMC(): Double {
         //dividr el peso entre la altura al cuadrado
         val df = DecimalFormat("#.##")
-        val imc = currentWeight / (currentHeight.toDouble()/100*currentHeight.toDouble()/100)
-       return df.format(imc).toDouble()
+        val imc = currentWeight / (currentHeight.toDouble() / 100 * currentHeight.toDouble() / 100)
+        return df.format(imc).toDouble()
     }
 
     private fun setAge() {
@@ -139,7 +144,11 @@ class IMCCalculatorActivity : AppCompatActivity() {
         tvWeight.text = currentWeight.toString()
     }
 
-    private fun setGenderSelection(isMaleSelected: Boolean, isFemaleSelected: Boolean, isOtherSelected: Boolean) {
+    private fun setGenderSelection(
+        isMaleSelected: Boolean,
+        isFemaleSelected: Boolean,
+        isOtherSelected: Boolean
+    ) {
         this.isMaleSelected = isMaleSelected
         this.isFemaleSelected = isFemaleSelected
         this.isOtherSelected = isOtherSelected
