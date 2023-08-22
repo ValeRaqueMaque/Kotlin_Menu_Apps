@@ -1,4 +1,4 @@
-package com.valeraquemaque.androidmaster.platzi
+package com.valeraquemaque.androidmaster.exercises
 
 fun main() {
     imprimirNombre(nombre = "Valeria", apellido = "Maqueda")
