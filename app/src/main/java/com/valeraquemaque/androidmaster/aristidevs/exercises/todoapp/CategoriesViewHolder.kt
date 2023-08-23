@@ -2,6 +2,7 @@ package com.valeraquemaque.androidmaster.aristidevs.exercises.todoapp
 
 import android.view.View
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.valeraquemaque.androidmaster.R
 
@@ -18,19 +19,37 @@ class CategoriesViewHolder(view: View) : RecyclerView.ViewHolder(view){
 
         when(taskCategory){
             TaskCategory.Business -> {
-                tvCategoryName.text = R.string.todo_categorie_business.toString()
+                tvCategoryName.text = itemView.context.getString(R.string.todo_categorie_business)
+                divider.setBackgroundColor(
+                    ContextCompat.getColor(divider.context, R.color.todo_business_category)
+                    //para el contexto, le agrego divider.context, está adentro del mismo componente
+                    // THIS no va.
+                )
             }
             TaskCategory.Other -> {
-                tvCategoryName.text = R.string.todo_categorie_other.toString()
+                tvCategoryName.text = itemView.context.getString(R.string.todo_categorie_other)
+                divider.setBackgroundColor(
+                    ContextCompat.getColor(divider.context, R.color.todo_other_category)
+                )
+
             }
             TaskCategory.Personal -> {
-                tvCategoryName.text = R.string.todo_categorie_personal.toString()
+                tvCategoryName.text = itemView.context.getString(R.string.todo_categorie_personal)
+                divider.setBackgroundColor(
+                    ContextCompat.getColor(divider.context, R.color.todo_personal_category)
+                )
             }
             TaskCategory.Piano -> {
-                tvCategoryName.text = R.string.todo_categorie_piano.toString()
+                tvCategoryName.text = itemView.context.getString(R.string.todo_categorie_piano)
+                divider.setBackgroundColor(
+                    ContextCompat.getColor(divider.context, R.color.todo_piano_category)
+                )
             }
             TaskCategory.Training -> {
-                tvCategoryName.text = R.string.todo_categorie_training.toString()
+                tvCategoryName.text = itemView.context.getString(R.string.todo_categorie_training)
+                divider.setBackgroundColor(
+                    ContextCompat.getColor(divider.context, R.color.todo_training_category)
+                )
             }
         }
     }

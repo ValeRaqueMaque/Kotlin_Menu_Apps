@@ -42,4 +42,5 @@
     <string name="todo_categorie_personal">Personal</string>
     <string name="todo_categorie_piano">Piano</string>
     <string name="todo_categorie_training">Entrenamiento</string>
+    <string name="todo_tasks">Tareas</string>
 </resources>

@@ -3,7 +3,6 @@ package com.valeraquemaque.androidmaster.exercises
 fun main() {
     imprimirNombre(nombre = "Valeria", apellido = "Maqueda")
 
-
     /**
      * LISTAS Y ARRAYS
      */
@@ -52,8 +51,6 @@ fun main() {
     //No es tan flexible como la lista
     val myArray = arrayOf(1, 2, 3, 4)
     println("Mi array es ${myArray.toList()}")
-
-
 }
 
 fun imprimirNombre ( nombre: String, segundoNombre: String = "Raquel", apellido: String){
