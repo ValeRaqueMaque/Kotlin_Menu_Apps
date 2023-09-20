@@ -35,12 +35,13 @@
 
 <!--TODOApp-->
     <string name="todo_title">Bienvenidos</string>
-
     <string name="todo_categories">Categorías: </string>
     <string name="todo_categorie_business">Negocios</string>
-    <string name="todo_categorie_other">Otros</string>
     <string name="todo_categorie_personal">Personal</string>
     <string name="todo_categorie_piano">Piano</string>
     <string name="todo_categorie_training">Entrenamiento</string>
+    <string name="todo_categorie_other">Otros</string>
     <string name="todo_tasks">Tareas</string>
+    <string name="todo_dialog_add_task">Añade la tarea</string>
+    <string name="todo_dialog_create_task">Crear tarea</string>
 </resources>

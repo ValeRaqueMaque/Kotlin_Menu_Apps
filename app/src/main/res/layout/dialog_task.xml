@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    Le doy un tamaño acorde a un diálogo -->
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="250dp"
+    android:background="@color/todo_background_todo_app"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/etTask"
+        android:layout_width="match_parent"
+        android:hint="@string/todo_dialog_add_task"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/rgCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbTaskBusiness"
+            android:text="@string/todo_categorie_business"
+            android:textColor="@color/white"
+            android:checked="true"
+            android:buttonTint="@color/todo_business_category"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbTaskPersonal"
+            android:text="@string/todo_categorie_personal"
+            android:textColor="@color/white"
+            android:buttonTint="@color/todo_personal_category"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbPiano"
+            android:text="@string/todo_categorie_piano"
+            android:textColor="@color/white"
+            android:buttonTint="@color/todo_piano_category"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbTaskTraining"
+            android:text="@string/todo_categorie_training"
+            android:textColor="@color/white"
+            android:buttonTint="@color/todo_training_category"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbTaskOther"
+            android:text="@string/todo_categorie_other"
+            android:textColor="@color/white"
+            android:buttonTint="@color/todo_other_category"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/todo_dialog_create_task"
+        android:backgroundTint="@color/todo_accent"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

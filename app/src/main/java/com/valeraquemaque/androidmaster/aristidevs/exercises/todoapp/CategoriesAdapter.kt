@@ -7,7 +7,7 @@ import com.valeraquemaque.androidmaster.R
 
 //Esta clase va a recibir parámetros. Se los agregamos :). Una lista privada de Task Categories, una sealed class que hicimos antes
 //Luego hay que pintar esta clase
-class CategoriesAdapter(private val categories: List<TaskCategory>) :
+class CategoriesAdapter(private val categories: List<TaskCategory>, private val onItemSelected:(Int) -> Unit) :
     RecyclerView.Adapter<CategoriesViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoriesViewHolder {
         //Create a view and pass it to onBindViewHolder
@@ -21,7 +21,7 @@ class CategoriesAdapter(private val categories: List<TaskCategory>) :
 
     override fun onBindViewHolder(holder: CategoriesViewHolder, position: Int) {
         //Pasa la información a pintar
-        holder.render(categories[position])
+        holder.render(categories[position], onItemSelected)
     }
 
 }
