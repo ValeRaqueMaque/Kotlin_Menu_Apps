@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/imc_background_app"
     android:padding="16dp"
-    tools:context=".imccalculator.ResultIMCActivity">
+    tools:context=".aristidevs.exercises.imccalculator.ResultIMCActivity">
 
     <TextView
         android:id="@+id/tvTitle"
@@ -59,7 +59,7 @@
                 android:textColor="@color/white"
                 android:textSize="70sp"
                 android:textStyle="bold"
-                tools:text="24.3"></TextView>
+                tools:text="24.3" />
 
             <TextView
                 android:id="@+id/tvDescription"
@@ -69,7 +69,7 @@
                 android:gravity="center"
                 android:textColor="@color/white"
                 android:textSize="26sp"
-                tools:text="Your body weight is..."></TextView>
+                tools:text="Your body weight is..." />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.cardview.widget.CardView>
@@ -83,6 +83,6 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"></Button>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

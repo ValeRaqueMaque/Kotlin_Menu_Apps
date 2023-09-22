@@ -6,40 +6,51 @@
     android:orientation="vertical"
     android:background="@color/imc_title_text"
     android:padding="20dp"
-    tools:context=".aristidevs.exercises.firstapp.MenuActivity">
+    tools:context=".aristidevs.exercises.MenuActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/greetings"
         android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:layout_marginHorizontal="50dp">
 
     </TextView>
+
     <Button
         android:id="@+id/btnSaludApp"
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
-        android:backgroundTint="#C32259"
+        android:backgroundTint="#D11F5C"
         android:layout_height="wrap_content"
         android:text="@string/SaludAPP">
     </Button>
 
     <Button
         android:id="@+id/btnIMCCalculatorApp"
-        android:backgroundTint="@color/imc_background_component_selected"
+        android:backgroundTint="#072251"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/IMC_Calculator">
     </Button>
 
     <Button
-        android:id="@+id/btnTODO"
-        android:backgroundTint="#3673A8"
+        android:id="@+id/btnTODOApp"
+        android:backgroundTint="#1064AE"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/Agenda">
+    </Button>
+
+    <Button
+        android:id="@+id/btnSuperheroApp"
+        android:backgroundTint="#3AA836"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SuperheroApp">
     </Button>
 
 </LinearLayout>

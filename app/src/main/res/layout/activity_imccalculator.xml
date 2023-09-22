@@ -7,7 +7,7 @@
     android:background="@color/imc_background_app"
     android:paddingHorizontal="10dp"
     android:paddingVertical="16dp"
-    tools:context=".imccalculator.IMCCalculatorActivity">
+    tools:context=".aristidevs.exercises.imccalculator.IMCCalculatorActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/viewHeight"
@@ -85,14 +85,14 @@
                 android:layout_marginBottom="10dp"
                 android:contentDescription="@string/maleVenus"
                 android:src="@drawable/male_venus"
-                app:tint="@color/white"></ImageView>
+                app:tint="@color/white" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/male"
                 android:textAllCaps="true"
-                android:textColor="@color/imc_title_text"></androidx.appcompat.widget.AppCompatTextView>
+                android:textColor="@color/imc_title_text" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </com.google.android.material.card.MaterialCardView>
 
@@ -120,14 +120,14 @@
                 android:layout_marginBottom="10dp"
                 android:contentDescription="@string/femalevenus"
                 android:src="@drawable/female_venus"
-                app:tint="@color/white"></ImageView>
+                app:tint="@color/white" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/female"
                 android:textAllCaps="true"
-                android:textColor="@color/white"></androidx.appcompat.widget.AppCompatTextView>
+                android:textColor="@color/white" />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </com.google.android.material.card.MaterialCardView>
@@ -156,14 +156,14 @@
                 android:layout_marginBottom="10dp"
                 android:contentDescription="@string/maleVenus"
                 android:src="@drawable/other"
-                app:tint="@color/white"></ImageView>
+                app:tint="@color/white" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/other"
                 android:textAllCaps="true"
-                android:textColor="@color/imc_title_text"></androidx.appcompat.widget.AppCompatTextView>
+                android:textColor="@color/imc_title_text" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </com.google.android.material.card.MaterialCardView>
 
@@ -191,7 +191,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/weight"
                 android:textAllCaps="true"
-                android:textColor="@color/imc_title_text"></TextView>
+                android:textColor="@color/imc_title_text" />
 
             <TextView
                 android:id="@+id/tvWeight"
@@ -200,7 +200,7 @@
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold"
-                tools:text="@string/initialWeight"></TextView>
+                tools:text="@string/initialWeight" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
@@ -259,7 +259,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/age"
                 android:textAllCaps="true"
-                android:textColor="@color/imc_title_text"></TextView>
+                android:textColor="@color/imc_title_text" />
 
             <TextView
                 android:id="@+id/tvAge"
@@ -268,7 +268,7 @@
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold"
-                tools:text="20"></TextView>
+                tools:text="20" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
@@ -312,6 +312,6 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/viewWeight"></Button>
+        app:layout_constraintTop_toBottomOf="@id/viewWeight" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

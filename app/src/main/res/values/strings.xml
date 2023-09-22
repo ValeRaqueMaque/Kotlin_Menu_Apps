@@ -1,5 +1,5 @@
 <resources>
-<!--IMC Calculator-->
+    <!--IMC Calculator-->
     <string name="app_name">AndroidMaster</string>
     <string name="femalevenus">femaleVenus</string>
     <string name="female">Mujer</string>
@@ -30,10 +30,11 @@
     <string name="SaludAPP">SaludAPP</string>
     <string name="IMC_Calculator">Calculadora de IMC</string>
     <string name="Agenda">Agenda personal</string>
-    <string name="greetings">Elije la aplicación a la que deseas ingresar</string>
+    <string name="SuperheroApp">Superhero App</string>
+    <string name="greetings">¡Hola! Elije la aplicación a la que deseas ingresar</string>
     <string name="other">Otro</string>
 
-<!--TODOApp-->
+    <!--TODOApp-->
     <string name="todo_title">Bienvenidos</string>
     <string name="todo_categories">Categorías: </string>
     <string name="todo_categorie_business">Negocios</string>

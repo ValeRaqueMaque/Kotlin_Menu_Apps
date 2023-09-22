@@ -1,4 +1,4 @@
-package com.valeraquemaque.androidmaster.imccalculator
+package com.valeraquemaque.androidmaster.aristidevs.exercises.imccalculator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.valeraquemaque.androidmaster.R
-import com.valeraquemaque.androidmaster.imccalculator.IMCCalculatorActivity.Companion.IMC_KEY
+import com.valeraquemaque.androidmaster.aristidevs.exercises.imccalculator.IMCCalculatorActivity.Companion.IMC_KEY
 
 class ResultIMCActivity : AppCompatActivity() {
 

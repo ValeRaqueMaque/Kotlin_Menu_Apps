@@ -1,4 +1,4 @@
-package com.valeraquemaque.androidmaster.imccalculator
+package com.valeraquemaque.androidmaster.aristidevs.exercises.imccalculator
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
